@@ -23,4 +23,4 @@ v4l2-ctl -c saturation=100
 #PATH=${PATH}:${JAVA_HOME}/bin export PATH
 
 
-java -Xmx128m -cp target/clank2-1.0-SNAPSHOT.jar:lib/srtplight-1.1.10.jar pe.pi.clank2.Clank2 224 224 3 /dev/null  
+java -Xmx128m -cp target/clank2-1.0-SNAPSHOT.jar:lib/srtplight-1.1.10.jar pe.pi.clank2.Clank2 /dev/video0 224 224 3 /dev/null  
