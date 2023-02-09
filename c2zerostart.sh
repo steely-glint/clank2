@@ -13,9 +13,7 @@ sleep 1
 (echo 1 > /sys/class/pwm/pwmchip0/pwm0/enable)
 (echo 1 > /sys/class/pwm/pwmchip0/pwm1/enable)
 
-#bullseye camera config
-# older raspios uses /dev/video0
-CAMERADEV=/dev/video12 export CAMERADEV
+CAMERADEV=/dev/video0 export CAMERADEV
 v4l2-ctl -d ${CAMERADEV} \
  --set-fmt-video width=224,height=224,pixelformat=2 -p 30
 

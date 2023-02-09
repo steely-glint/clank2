@@ -13,7 +13,7 @@ To run, install java 11:
 - on a Pi Zero you'll need to get a jdk from azul.com as debian no longer has jdk builds for armv6 
 - on all newer Pi's you can use apt-get 
 
-Enable your camera with raspi-config
+Enable your camera (in bullseye you need to enable legacy camera) with raspi-config
 Enable _both_ pwm pins by adding the lines in config.txt.append to the end of /boot/config.txt .
 Reboot.
 
